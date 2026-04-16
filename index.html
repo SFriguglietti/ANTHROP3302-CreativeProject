@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Anthropology — [Your Title Here]</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADER — animates away on page load
+  ============================================================ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__line"></div>
+  </div>
+
+  <!-- ============================================================
+       HERO
+       Edit: hero title lines, subtitle, and tag labels.
+       To add a background image: set background-image on .hero
+       in style.css or place an <img class="hero__bg-img"> inside .hero.
+  ============================================================ -->
+  <header class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <nav class="hero__nav">
+      <span class="hero__brand">ANTH <em>000</em></span>
+      <ul class="hero__nav-links" id="nav-links">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#section-1">Section 1</a></li>
+        <li><a href="#section-2">Section 2</a></li>
+        <li><a href="#section-3">Section 3</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+      <button class="hero__burger" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="hero__body">
+      <div class="hero__tags">
+        <span class="tag">Medical Anthropology</span>
+        <span class="tag tag--ghost">[Your Topic Tag]</span>
+      </div>
+
+      <!-- Edit these three lines — they stack to form the big title -->
+      <h1 class="hero__title">
+        <span>YOUR</span>
+        <span class="hero__title-accent">PAGE</span>
+        <span>TITLE</span>
+      </h1>
+
+      <p class="hero__sub">
+        Replace this with a sharp one-liner that frames your thesis or argument.
+        This is the first thing readers encounter — make it count.
+      </p>
+
+      <a href="#intro" class="hero__cta">Scroll Down <span>↓</span></a>
+    </div>
+
+    <div class="hero__index" aria-hidden="true">01 / 06</div>
+  </header>
+
+  <!-- ============================================================
+       STICKY NAV — slides in after hero leaves viewport
+  ============================================================ -->
+  <div class="sticky-nav" id="sticky-nav">
+    <div class="sticky-nav__inner container">
+      <a href="#top" class="sticky-nav__brand">ANTH <em>000</em></a>
+      <ul class="sticky-nav__links">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#section-1">Section 1</a></li>
+        <li><a href="#section-2">Section 2</a></li>
+        <li><a href="#section-3">Section 3</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         01 — INTRODUCTION
+    ============================================================ -->
+    <section class="section" id="intro">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow__num">01</span>
+          <span class="eyebrow__label">Introduction</span>
+        </div>
+
+        <div class="intro-layout">
+          <div class="intro-layout__head">
+            <h2 class="sec-title">Replace With<br /><em>Your Heading</em></h2>
+          </div>
+          <div class="intro-layout__body">
+            <p class="lead">
+              Replace with your opening paragraph. Medical anthropology examines
+              health, illness, and healing through cultural, biological, and social
+              lenses — state your specific focus and why it matters.
+            </p>
+            <p>
+              Add background context here. Who or what are you examining? What
+              theoretical framework (critical medical anthropology, biocultural
+              approach, ethnomedicine, etc.) guides your analysis?
+            </p>
+            <p>
+              A third paragraph can briefly outline what each section covers and
+              how the argument develops across the page.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stat strip — replace numbers and descriptors -->
+        <div class="stat-strip">
+          <div class="stat">
+            <span class="stat__num">00%</span>
+            <span class="stat__label">Key statistic — replace this</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">0B</span>
+            <span class="stat__label">Key statistic — replace this</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">000+</span>
+            <span class="stat__label">Key statistic — replace this</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">0K</span>
+            <span class="stat__label">Key statistic — replace this</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         02 — SECTION ONE
+         Image left, text right.
+         Duplicate this block (update id + eyebrow number) for more sections.
+    ============================================================ -->
+    <section class="section section--dark" id="section-1">
+      <div class="container">
+        <div class="eyebrow eyebrow--light">
+          <span class="eyebrow__num">02</span>
+          <span class="eyebrow__label">Section One</span>
+        </div>
+        <div class="split">
+          <figure class="split__media">
+            <!-- Replace src with your own image URL or local path -->
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80"
+              alt="Replace — describe the image content"
+              class="split__img"
+              loading="lazy"
+            />
+            <div class="split__fig-label">Fig. 01</div>
+          </figure>
+          <div class="split__text">
+            <h2 class="sec-title sec-title--light">Section One<br /><em>Title Here</em></h2>
+            <p>
+              Replace with body text for this section. This might cover the biomedical
+              vs. holistic models, a specific disease ecology, healthcare disparities,
+              structural violence, or another core theme in medical anthropology.
+            </p>
+            <p>
+              Deepen the argument here with evidence from your sources. Cite
+              ethnographies, epidemiological data, or field observations that
+              anchor your claims.
+            </p>
+            <blockquote class="pull-quote">
+              "Replace with a key quote from a researcher or primary source that
+              crystallizes the argument of this section."
+              <cite>— Author, <em>Source Title</em></cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         03 — SECTION TWO
+         Two-column text + full-width image
+    ============================================================ -->
+    <section class="section" id="section-2">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow__num">03</span>
+          <span class="eyebrow__label">Section Two</span>
+        </div>
+        <h2 class="sec-title sec-title--wide">Section Two Title Here</h2>
+
+        <div class="two-col">
+          <div>
+            <p>
+              Replace with the first column of body text. For two-column layouts,
+              aim for balanced length on each side.
+            </p>
+            <p>
+              Continue developing your argument — discuss theory, methodology,
+              or cultural context relevant to your medical anthropology focus.
+            </p>
+          </div>
+          <div>
+            <p>
+              Replace with the second column. Use this to present a case study,
+              counterpoint, or supporting evidence that extends the first column.
+            </p>
+            <p>
+              Close the section with a synthesizing point that transitions
+              naturally to the next section.
+            </p>
+          </div>
+        </div>
+
+        <figure class="wide-fig">
+          <img
+            src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1200&q=80"
+            alt="Replace — describe the image content"
+            loading="lazy"
+          />
+          <figcaption>Image caption and credit. Replace this text.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         04 — SECTION THREE — theme card grid
+    ============================================================ -->
+    <section class="section section--dark" id="section-3">
+      <div class="container">
+        <div class="eyebrow eyebrow--light">
+          <span class="eyebrow__num">04</span>
+          <span class="eyebrow__label">Section Three</span>
+        </div>
+        <h2 class="sec-title sec-title--light">Section Three<br /><em>Title Here</em></h2>
+
+        <div class="card-grid">
+          <!-- Card 1 — copy this block to add more cards -->
+          <article class="card">
+            <div class="card__num">—01</div>
+            <h3 class="card__title">Theme or Subtopic</h3>
+            <p class="card__body">
+              Replace with a focused paragraph on this subtopic. Cards work
+              well for key themes, comparative cases, or analytical categories.
+            </p>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__num">—02</div>
+            <h3 class="card__title">Theme or Subtopic</h3>
+            <p class="card__body">
+              Replace with your content. Add or remove cards by duplicating
+              or deleting the <code>&lt;article class="card"&gt;</code> block.
+            </p>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </article>
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card__num">—03</div>
+            <h3 class="card__title">Theme or Subtopic</h3>
+            <p class="card__body">
+              Replace with your content. Three cards fill the grid evenly;
+              add a fourth for a 2×2 layout.
+            </p>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         05 — GALLERY
+         Replace src URLs with your own images.
+         Update alt attributes and figcaptions.
+    ============================================================ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow__num">05</span>
+          <span class="eyebrow__label">Gallery</span>
+        </div>
+        <h2 class="sec-title">Visual<br /><em>Documentation</em></h2>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=700&q=80" alt="Gallery image 1 — replace description" />
+            <figcaption>Caption for image 1. Replace this text.</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80" alt="Gallery image 2 — replace description" />
+            <figcaption>Caption for image 2.</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80" alt="Gallery image 3 — replace description" />
+            <figcaption>Caption for image 3.</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1000&q=80" alt="Gallery image 4 — replace description" />
+            <figcaption>Caption for image 4.</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=600&q=80" alt="Gallery image 5 — replace description" />
+            <figcaption>Caption for image 5.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         06 — SOURCES / BIBLIOGRAPHY
+    ============================================================ -->
+    <section class="section section--dark" id="sources">
+      <div class="container">
+        <div class="eyebrow eyebrow--light">
+          <span class="eyebrow__num">06</span>
+          <span class="eyebrow__label">Sources</span>
+        </div>
+        <h2 class="sec-title sec-title--light">Bibliography</h2>
+        <ol class="sources-list">
+          <li>Author Last, First. <em>Book Title Here</em>. Publisher, Year.</li>
+          <li>Author Last, First. "Article Title." <em>Journal Name</em> vol. X, no. X (Year): pages.</li>
+          <li>
+            Author Last, First. "Web Article Title." <em>Website Name</em>. Date.
+            <a href="https://example.com" target="_blank" rel="noopener">https://example.com</a>
+          </li>
+          <li>Add more sources following your citation style (MLA, APA, Chicago…)</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>[Your Name]</span>
+      <span class="site-footer__sep">×</span>
+      <span>Anthropology [Course #]</span>
+      <span class="site-footer__sep">×</span>
+      <span>[Semester, Year]</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox (populated by JS) -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
